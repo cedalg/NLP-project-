@@ -1,0 +1,47 @@
+  .jumbotron {
+	  background-color: #ffc107;
+  }
+
+  #cover {
+    background: #222 url('https://i.picsum.photos/id/921/1920/1080.jpg') center center no-repeat;
+    background-size: cover;
+	height: 100%;
+	width: 100%;
+    position: relative;
+}
+
+#cover2 {
+    background: #222 url('https://unsplash.it/1920/1080/?random') center center no-repeat;
+    background-size: cover;
+	height: 100%;
+	width: 100%;
+    position: relative;
+}
+
+textarea {
+	border: 0px;
+}
+
+#cover-caption {
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.boxsizingBorder {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+.op {
+	background-color: #ffffff8c;
+	padding: 20px;
+	margin-top: 15vh;
+	margin-bottom: 10vh;
+	border-radius: 10px;	
+}
+
+.form-group {
+	opacity: 100%;
+}
