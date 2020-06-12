@@ -88,7 +88,7 @@ def search_sijax():
         if message:
             data = [message]
             vect = cv.transform(data).toarray()
-            my_prediction = clf.predict(vect)
+            my_prediction = loaded_model.predict(vect)
             
             if my_prediction == 0:
                 obj_response.html("#resultat",'<div class="alert alert-success" role="alert">Good review</div>')
@@ -96,8 +96,8 @@ def search_sijax():
                 obj_response.html("#resultat",'<div class="alert alert-danger" role="alert">Bad review</div>')
     
     
-        # filename = 'finalized_model.pkl'
-        # loaded_model = pickle.load(open(filename, 'rb')
+    filename = 'finalized_model.pkl'
+    loaded_model = pickle.load(open(filename, 'rb')
 
     df = pd.read_csv('https://raw.githubusercontent.com/lydiahiba/NLP_Project/master/reviews_hotels_preproc.csv')
     df = df.drop(['Unnamed: 0'], axis = 1)
